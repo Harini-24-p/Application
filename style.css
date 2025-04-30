@@ -1,0 +1,171 @@
+
+    
+        body {
+            font-family: Arial, sans-serif;
+            background:aliceblue;
+            margin: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        form {
+            background:linear-gradient( #D094EA,#ffffff);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            overflow: hidden;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        
+
+        form div {
+            margin-bottom: 9px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .form_action--button {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+
+        .list {
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+            width: 100%;
+         
+            margin-right: 20px;
+        }
+
+        .list th,
+        .list td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .list th {
+            background-color:  #D094EA;
+            color: black;
+        }
+
+        .list tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    
+        @media (max-width: 600px) {
+            /* Body adjustments for smaller screens */
+            body {
+                margin: 22%;
+            }
+        
+            /* Form adjustments */
+            form {
+                width: 60%;
+                padding: 15px;
+                margin-top: 20px;
+                border-radius: 15px;
+            }
+        
+            /* Label adjustments for smaller font */
+            label {
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+        
+            /* Input fields adjustments for better mobile touch */
+            input[type="text"],
+            input[type="number"],
+            input[type="email"],
+            select {
+                padding: 10px;
+                font-size: 14px;
+            }
+        
+            /* Button adjustments */
+            .form_action--button {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            input[type="submit"],
+            input[type="reset"] {
+                width: 100%;
+                padding: 12px;
+            }
+        
+            /* List adjustments */
+            .list {
+                margin-top: 20px;
+                margin-right: 0;
+                width: 100%;
+                overflow-x: auto;
+                box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+            }
+        
+            /* Table adjustments */
+            table {
+                width: 30%;
+          
+                overflow-x: auto;
+                position: absolute;
+            }
+        
+            .list th,
+            .list td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+        
